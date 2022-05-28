@@ -18,7 +18,7 @@ public class demoQAapf {
     @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browserSize = "1920x1080";
+        Configuration.browserSize = "1800x900";
     }
 
     @Test
@@ -60,13 +60,13 @@ public class demoQAapf {
 
         $("#currentAddress").setValue("House No. 4 on Bohdan Lepky Street");
 
-        $("# css-yk16xz-control").click();
+        $("#state").click();
         $(byText("Haryana")).click();
 
-        $("# css-2b097c-container").click();
+        $("#city").click();
         $(byText("Karnal")).click();
 
-        $("#Submit").click();
+        $("#submit").click();
 
         $(".modal-content").shouldHave(text("Pilot"), text("Pirx"), text("pilot@pirx.pl"), text("Male"),
                 text("15 August,1966"), text("Reading, Music"), text("meh.jpg"),
