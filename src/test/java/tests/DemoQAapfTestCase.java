@@ -63,9 +63,18 @@ public class DemoQAapfTestCase {
 
         $("#submit").click();
 
-        $(".modal-content").shouldHave(text("Pilot"), text("Pirx"), text("pilot@pirx.pl"), text("Male"),
-                text("15 August,1966"), text("Reading, Music"), text("meh.jpg"),
-                text("House No. 4 on Bohdan Lepky Street"), text("Haryana"), text("Karnal"), text("English"));
+        $(".modal-content").shouldHave(
+                text("Pilot"),
+                text("Pirx"),
+                text("pilot@pirx.pl"),
+                text("Male"),
+                text("15 August,1966"),
+                text("Reading, Music"),
+                text("meh.jpg"),
+                text("House No. 4 on Bohdan Lepky Street"),
+                text("Haryana"),
+                text("Karnal"),
+                text("English"));
 
     }
 
