@@ -4,8 +4,6 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
@@ -19,7 +17,7 @@ public class DemoQAapfTestCase {
     }
 
     @Test
-    void QAapf() throws IOException {
+    void QAapf() {
 
         open("/automation-practice-form");
 
@@ -70,5 +68,6 @@ public class DemoQAapfTestCase {
                 text("House No. 4 on Bohdan Lepky Street"), text("Haryana"), text("Karnal"), text("English"));
 
     }
+
 
 }
