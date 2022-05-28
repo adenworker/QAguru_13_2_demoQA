@@ -56,7 +56,7 @@ public class demoQAapf {
         $(byText("Music")).click();
 
 //        $("#form-control-file").uploadFile(new File("meh.jpg"));
-        $("#uploadPicture").uploadFromClasspath("file.txt");
+        $("#uploadPicture").uploadFromClasspath("meh.jpg");
 
         $("#currentAddress").setValue("House No. 4 on Bohdan Lepky Street");
 
